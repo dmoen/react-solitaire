@@ -1,0 +1,11 @@
+.card-row {
+  width: 100px;
+  top: 250px;
+  position: absolute;
+}
+
+@for $i from 1 through 7 {
+  .card-row--#{$i} {
+    left: #{120 * ($i - 1)}px;
+  }
+}
